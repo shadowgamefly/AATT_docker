@@ -1,0 +1,7 @@
+aatt:
+  build: .
+  volumes:
+    - ".:/app"
+  ports:
+    - "3000:3000"
+  command: bash -c "git clone https://github.com/paypal/AATT.git && cd AATT && npm install && git submodule init && git submodule update && DEBUG=AATT* http_port=3000 node app.js"
