@@ -17,7 +17,7 @@ Here is a sample ajax script which would initiate the request:
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.open("POST","http://localhost:3000/evaluate",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-xmlhttp.send("source=" + document.getElementsByTagName('html')[0].value + "&output=json";
+xmlhttp.send("source=" + document.getElementsByTagName('html')[0].value + "&output=json");
 ```
 
 Then the result should showup in both docker log as well as *xmlhttp.response*
